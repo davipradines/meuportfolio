@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Davi Pradines — Design Lead · AI Maker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- standalone build: project images are injected by projects.js as string refs,
+     so they're declared here for the bundler and resolved via window.__resources. -->
+<meta name="ext-resource-dependency" content="assets/lipstick-table.jpg" data-resource-id="a01" />
+<meta name="ext-resource-dependency" content="assets/lipstick-device.jpg" data-resource-id="a02" />
+<meta name="ext-resource-dependency" content="assets/lipstick-sxsw.webp" data-resource-id="a03" />
+<meta name="ext-resource-dependency" content="assets/lipstick-apply.jpg" data-resource-id="a04" />
+<meta name="ext-resource-dependency" content="assets/rumpi-brand-web.jpg" data-resource-id="a05" />
+<meta name="ext-resource-dependency" content="assets/rumpi-team.jpg" data-resource-id="a06" />
+<meta name="ext-resource-dependency" content="assets/dates-logo.png" data-resource-id="a07" />
+<meta name="ext-resource-dependency" content="assets/dates-devices.png" data-resource-id="a08" />
+<meta name="ext-resource-dependency" content="assets/dates-login.png" data-resource-id="a09" />
+<meta name="ext-resource-dependency" content="assets/dates-team-flag.png" data-resource-id="a10" />
+<meta name="ext-resource-dependency" content="assets/lenovo-libras.jpg" data-resource-id="a11" />
+<!-- intentionally NOT adding the 'js' class so .reveal content shows immediately
+     in the unpacked file (html:not(.js) .reveal{opacity:1}); avoids any
+     scroll-reveal stall. PT/EN toggle, carousels and expand still work. -->
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-name">Davi Pradines</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#sobre" class="i18n" id="nav-about">Sobre</a>
+        <a href="#projetos" class="i18n" id="nav-work">Projetos</a>
+        <a href="#contato" class="i18n" id="nav-contact">Contato</a>
+      </div>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch to English">
+        <span id="langLabel">EN</span> <span aria-hidden="true">🌐</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<div class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow reveal i18n" id="hero-eyebrow">Design Lead · AI Maker · CESAR · Recife, BR</p>
+      <h1 class="reveal i18n" id="hero-h1">Olá! Eu sou
+Davi Pradines</h1>
+      <p class="hero-desc reveal i18n" id="hero-desc">Como Design Lead, minha missão é desbloquear o potencial máximo de negócios através do design estratégico. Sou um IA Maker: especialista em desenhar com inteligência artificial e, acima de tudo, em projetar as próprias IAs. Unindo maturidade de liderança e inovação radical, transformo visões complexas em produtos prontos para o mercado.</p>
+
+      <div class="tags reveal">
+        <span class="tag sxsw i18n" id="tag-sxsw">🏆 SXSW Innovation Award</span>
+        <span class="tag ai i18n" id="tag-ai">⚡ AI Maker</span>
+        <span class="tag i18n" id="tag-master">Mestre em Design</span>
+      </div>
+
+      <div class="cta-row reveal">
+        <a href="#projetos" class="btn btn-primary i18n" id="cta-work">Ver projetos ↓</a>
+        <a href="#contato" class="btn btn-ghost i18n" id="cta-contact">Entrar em contato</a>
+      </div>
+    </div>
+
+    <div class="hero-photos reveal" role="group" aria-roledescription="carrossel" aria-label="Fotos de Davi Pradines">
+      <div class="photo-frame">
+        <div class="photo-track" id="heroTrack">
+          <figure class="photo-slide is-active">
+            <img src="assets/davi-sxsw.jpg" alt="Davi Pradines sorrindo e segurando o troféu People's Choice no painel da SXSW" loading="eager">
+          </figure>
+          <figure class="photo-slide">
+            <img src="assets/hero-panel.jpg" alt="Davi Pradines falando ao microfone em um painel no CESAR">
+          </figure>
+          <figure class="photo-slide">
+            <img src="assets/davi-booth.jpg" alt="Davi Pradines demonstrando o Smart Lipstick em um estande na SXSW 2025">
+          </figure>
+        </div>
+        <button class="photo-nav prev" id="heroPrev" type="button" aria-label="Foto anterior">‹</button>
+        <button class="photo-nav next" id="heroNext" type="button" aria-label="Próxima foto">›</button>
+      </div>
+      <div class="photo-dots" id="heroDots" role="tablist" aria-label="Selecionar foto"></div>
+    </div>
+  </header>
+
+</div>
+
+<!-- ================= SOBRE + LIDERANÇA + IA ================= -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-intro">
+        <p class="eyebrow reveal" style="color:var(--ac)"><span aria-hidden="true">⚡</span> <span class="i18n" id="about-label">Sobre</span></p>
+        <div class="prose">
+          <p class="reveal i18n" id="about-p1">Sou designer, mas meu trabalho começa antes dos protótipos e termina depois do lançamento. Venho da publicidade onde aprendi a construir narrativas antes de construir interfaces. Hoje, lidero projetos que combinam IA, design participativo e inovação com impacto real no mundo.</p>
+          <p class="reveal i18n" id="about-p2">No CESAR Ventures, um dos principais venture builders de tecnologia do Brasil, lidero um time de 7 designers em mais de 14 projetos de startup simultâneos. Minha carteira diz Designer Sênior. Meu dia a dia diz Design Lead envolve 1:1s recorrentes, feedback estruturado, gestão de entregas e foco no desenvolvimento de carreira de cada pessoa do time.</p>
+        </div>
+      </div>
+
+      <!-- AI block -->
+      <div class="ai-block reveal">
+        <p class="eyebrow i18n" id="ai-eyebrow" style="color:var(--ac)">⚡ AI Maker</p>
+        <h3 class="i18n" id="ai-title">Não só assistido por IA. Construído com ela.</h3>
+        <p class="i18n" id="ai-body">Todo projeto deste portfólio tem IA ou machine learning no núcleo. Não como feature adicionada no fim, mas como problema de design desde o primeiro dia. Atuo onde o design thinking encontra o comportamento dos modelos, os dados de treinamento e a interação humana. Lidero times que prototipam, validam e entregam produtos de IA com pessoas reais no centro.</p>
+      </div>
+    </div>
+
+    <!-- Métricas de sucesso -->
+    <p class="sublabel reveal i18n" id="metrics-label">Métricas de sucesso</p>
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-num">14</div>
+        <div class="stat-label i18n" id="stat-1">Anos de carreira criativa</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label i18n" id="stat-2">Anos em inovação com IA</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label i18n" id="stat-3">Indicações ao SXSW · 1 vitória</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label i18n" id="stat-4">Patentes registradas — INPI</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJETOS ================= -->
+<section id="projetos">
+  <div class="wrap">
+    <p class="label reveal i18n" id="work-label">PROJETOS</p>
+    <div id="projectList"></div>
+  </div>
+</section>
+
+<!-- ================= IMPRENSA ================= -->
+<section id="imprensa" class="section-divider">
+  <div class="wrap">
+    <p class="label reveal i18n" id="press-label">Imprensa e palestras</p>
+    <div class="reveal">
+      <a class="press-item" href="https://sxsw.com/interactive/2025/2025-sxsw-innovation-awards-winners-announced/" target="_blank" rel="noopener">
+        <span class="press-outlet">SXSW</span>
+        <span class="press-title i18n" id="press-1">Smart Lipstick vence SXSW Innovation Awards</span>
+        <span class="press-year">2025 <span class="press-arr" aria-hidden="true">↗</span></span>
+      </a>
+      <a class="press-item" href="https://fastcompanybrasil.com/eventos/sxsw-2025/batom-inteligente-do-boticario-ganha-premio-no-sxsw/" target="_blank" rel="noopener">
+        <span class="press-outlet">Fast Company</span>
+        <span class="press-title i18n" id="press-2">O Smart Lipstick redefine a tecnologia de beleza pela acessibilidade</span>
+        <span class="press-year">2025 <span class="press-arr" aria-hidden="true">↗</span></span>
+      </a>
+      <a class="press-item" href="https://clubedecriacao.com.br/ultimas/sxsw-2025-12/" target="_blank" rel="noopener">
+        <span class="press-outlet i18n" id="press-3-o">UXConf BR · Palestrante</span>
+        <span class="press-title i18n" id="press-3">Design Inclusivo: incluindo pessoas com deficiência em processos de inovação</span>
+        <span class="press-year">2023 <span class="press-arr" aria-hidden="true">↗</span></span>
+      </a>
+      <a class="press-item" href="https://globoplay.globo.com/v/13416103/" target="_blank" rel="noopener">
+        <span class="press-outlet">G1</span>
+        <span class="press-title i18n" id="press-4">Davi Pradines conquista prêmio internacional</span>
+        <span class="press-year">2025 <span class="press-arr" aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+
+    <p class="sublabel reveal i18n" id="pod-label" style="margin-top:56px">Podcasts</p>
+    <div class="podcasts reveal" id="podcastList">
+      <a class="podcast-card" href="https://open.spotify.com/episode/27S6gAM4RyPKHKDSdVTHOi" target="_blank" rel="noopener" aria-label="Spotify — Design inclusivo e inteligência artificial, podcast Aliados">
+        <span class="pod-cover"><img src="https://i.scdn.co/image/ab6765630000ba8a061edceb17be36f92f4bfede" alt="" loading="lazy"></span>
+        <span class="pod-meta">
+          <span class="pod-show">Aliados · Spotify · 2024</span>
+          <span class="pod-title i18n" id="pod-1-title">Design inclusivo e inteligência artificial</span>
+        </span>
+        <span class="pod-arr" aria-hidden="true">↗</span>
+      </a>
+      <a class="podcast-card" href="https://open.spotify.com/episode/0MzAlQ8GksunLDNdiOAfV1" target="_blank" rel="noopener" aria-label="Spotify — Design e Diversidade, CESARCast">
+        <span class="pod-cover"><img src="https://i.scdn.co/image/ab6765630000ba8a6aa93f21ae3ebecd9c6f4a1c" alt="" loading="lazy"></span>
+        <span class="pod-meta">
+          <span class="pod-show">CESARCast · Spotify · 2023</span>
+          <span class="pod-title i18n" id="pod-2-title">Design e Diversidade</span>
+        </span>
+        <span class="pod-arr" aria-hidden="true">↗</span>
+      </a>
+      <a class="podcast-card" href="https://www.youtube.com/watch?v=4SX6dytfdqI" target="_blank" rel="noopener" aria-label="YouTube — entrevista em vídeo com Davi Pradines">
+        <span class="pod-cover"><img src="https://img.youtube.com/vi/4SX6dytfdqI/hqdefault.jpg" alt="" loading="lazy"></span>
+        <span class="pod-meta">
+          <span class="pod-show">YouTube · Vídeo</span>
+          <span class="pod-title i18n" id="pod-3-title">Palestra</span>
+        </span>
+        <span class="pod-arr" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="section-divider">
+  <div class="wrap">
+    <p class="label reveal i18n" id="contact-label">Contato</p>
+    <div class="contact-grid">
+      <h2 class="reveal i18n" id="contact-h2">Vamos construir<br>algo que<br>deixe marca.</h2>
+      <div class="contact-right reveal">
+        <p class="i18n" id="contact-desc">Aberto a oportunidades de Design Lead em empresas de produto e tech — onde IA é central, o design tem voz estratégica e a inclusão não é pensada no final.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/davipradines" target="_blank" rel="noopener" aria-label="LinkedIn de Davi Pradines">linkedin.com/in/davipradines <span class="arr" aria-hidden="true">↗</span></a>
+          <a href="mailto:daviferro@gmail.com" aria-label="E-mail de Davi Pradines">daviferro@gmail.com <span class="arr" aria-hidden="true">↗</span></a>
+          <a href="https://www.davipradines.com" target="_blank" rel="noopener" aria-label="Site de Davi Pradines">davipradines.com <span class="arr" aria-hidden="true">↗</span></a>
+        </div>
+        <a href="mailto:daviferro@gmail.com" class="btn btn-primary btn-block i18n" id="contact-btn">Entrar em contato →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap i18n" id="footer">© 2025 Davi Pradines · Recife, Brasil · Aberto a oportunidades globais</div>
+</footer>
+
+<template id="__bundler_thumbnail" data-bg-color="#F7F5F0">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F7F5F0"/>
+    <circle cx="600" cy="330" r="120" fill="#C84B2F"/>
+    <text x="600" y="378" font-family="DM Sans, sans-serif" font-size="150" font-weight="600" fill="#F7F5F0" text-anchor="middle">D</text>
+    <text x="600" y="540" font-family="DM Sans, sans-serif" font-size="56" font-weight="300" letter-spacing="-1" fill="#1A1814" text-anchor="middle">Davi Pradines</text>
+    <text x="600" y="592" font-family="DM Sans, sans-serif" font-size="24" font-weight="400" letter-spacing="3" fill="#8A8780" text-anchor="middle">DESIGN LEAD · AI MAKER</text>
+  </svg>
+</template>
+
+<script src="projects.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+grammarly-extension-vbars { border-radius: 0px 50px 0px 0px !important }
+grammarly-extension-vbars { border-radius: 0px !important }
+#proj-01-contrib [data-path-to-node="10,1,0"] >b { line-height: 3.05 !important }
+#proj-01-contrib [data-path-to-node="10,1,0"] >b { line-height: 1.5 !important }
+#proj-01-contrib [data-path-to-node="10,1,0"] >b { line-height: 1.75 !important }
+#proj-01-contrib li:nth-child(3) >p { width: 784px !important }
+#proj-01-contrib li:nth-child(3) >p { width: 773px !important }
+#proj-01-contrib li:nth-child(3) >p { width: 765px !important }
+#proj-01-contrib li:nth-child(3) >p { width: 774px !important }
+#proj-01-chal { width: 783px !important }
+#proj-01-chal { width: 907px !important }
+#projectList [role="region"] .detail-cols [spellcheck] { width: 900px !important }
+#proj-02-chal { width: 900px !important }
+#proj-03-chal { width: 900px !important }
+#proj-04-chal { width: 900px !important }
+</style>
